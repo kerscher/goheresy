@@ -23,24 +23,6 @@ Requires Go 1.24 or later.
 | Source    | `make install`                                                |
 | Container | `make image`                                                  |
 
-Formatting rules
-----------------
-
-An `if`, `else`, `for`, `range` or standalone block is compacted if
-`goimports` places its opening brace and any header, one non-empty
-statement, and its closing brace on three consecutive lines. Comments in
-the header or block prevent compaction. A comment after the closing
-brace is preserved. The compact statement has no trailing semicolon.
-
-Compaction is limited to 120 Unicode code points per resulting line,
-including indentation and any trailing comment. A tab counts as one code
-point.
-
-Function bodies, switch and select clauses, type declarations and
-composite literals retain the original layout. Original fragment
-formatting can change indentation inside multiline raw strings on
-repeated runs.
-
 Why!?
 -----
 
