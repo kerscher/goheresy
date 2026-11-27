@@ -1,0 +1,9 @@
+package config
+import "strings"
+func read(path string) ([]byte,error) {
+data, err := os.ReadFile(path)
+if err != nil {
+return nil, fmt.Errorf("read %s: %w",path,err)
+}
+return data,nil
+}

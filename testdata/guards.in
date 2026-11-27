@@ -1,0 +1,13 @@
+package config
+
+func load(err error) error {
+	// Preserve the explanation.
+	if err != nil {
+		// This comment belongs to the return.
+		return err
+	}
+	if err != nil {
+		return err
+	} // This comment belongs to the guard.
+	return nil
+}
